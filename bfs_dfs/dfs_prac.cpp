@@ -36,10 +36,7 @@ void	dfs_recursive(vector< vector< pair<int, const char*> > > graph, int start, 
 	for (pair<int, const char*> a : graph[start])
 	{
 		if (!visit[a.first])
-		{
-			visit[a.first] = true;
 			dfs_recursive(graph, a.first, visit);
-		}
 	}
 }
 
